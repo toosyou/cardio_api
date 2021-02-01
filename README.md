@@ -5,7 +5,7 @@
     docker run --restart=always -d --name ca \
                 -p 8787:8787 -p 8899:8899 \
                 -p 8990:8990 -p 8890:8890 \
-                --gpus all toosyou/cardio_api:v0.5; 
+                --gpus all toosyou/cardio_api; 
     docker logs --follow ca
     ```
 
@@ -20,5 +20,6 @@
                 -it --entrypoint="" \
                 -p 8787:8787 -p 8899:8899 \
                 -p 8990:8990 -p 8890:8890 \
-                --gpus all toosyou/cardio_api:v0.5 /bin/bash; 
+                -v /mnt/nas/homes/toosyou/projects/tmp:/mnt \
+                --gpus all toosyou/cardio_api /bin/bash; 
     ```
