@@ -8,7 +8,7 @@ export LANG=C.UTF-8
 git clone --recurse-submodules https://github.com/LIU8606/arrhythmia Arr
 
 cd /Arr
-wget -O model.h5 https://nas.miplab.org:5001/sharing/E1kf8fQkM
+wget -O model.h5 https://github.com/LIU8606/arrhythmia/releases/download/1.0.0/model.h5
 
 pipenv sync
 NVIDIA_VISIBLE_DEVICES="0" \
