@@ -1,1 +1,3 @@
 .local
+.netrc
+*.json

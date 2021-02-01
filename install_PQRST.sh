@@ -13,5 +13,4 @@ wget -O weight.pkl https://nas.miplab.org:5001/sharing/EaMNy6NC2
 PIPENV_PIPFILE=/PQRST/Pipfile pipenv sync
 PIPENV_PIPFILE=/PQRST/Pipfile NVIDIA_VISIBLE_DEVICES="0" \
                                 pipenv run python3 /PQRST/server.py \
-                                 -p weight.pkl 
-                                 #port 8899
+                                 -p weight.pkl #port 8899
