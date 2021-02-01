@@ -10,7 +10,6 @@ git clone --recurse-submodules https://github.com/LIU8606/arrhythmia Arr
 cd /Arr
 wget -O model.h5 https://nas.miplab.org:5001/sharing/E1kf8fQkM
 
-PIPENV_PIPFILE=/PQRST/Pipfile pipenv sync
-PIPENV_PIPFILE=/PQRST/Pipfile NVIDIA_VISIBLE_DEVICES="0" \
-                                pipenv run python3 /Arr/api.py \
-                                 -m model.h5 # port 8890
+pipenv sync
+NVIDIA_VISIBLE_DEVICES="0" \
+    pipenv run python3 /Arr/api.py -m model.h5 # port 8890
