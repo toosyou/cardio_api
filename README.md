@@ -9,3 +9,8 @@
     ```
     docker stop ca && docker rm ca
     ```
+
+* For dev
+    ```
+    docker run --name ca_dev -it -p 8787:8787 -p 8899:8899 --entrypoint="" --gpus all toosyou/cardio_api:v0 /bin/bash
+    ```
