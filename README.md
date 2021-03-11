@@ -5,6 +5,7 @@
     docker run --restart=always -d --name ca \
                 -p 8787:8787 -p 8899:8899 \
                 -p 8990:8990 -p 8890:8890 \
+                -v /mnt/nas/Lab/cardiotool/saved_snps:/snps \
                 --gpus all toosyou/cardio_api; 
     docker logs --follow ca
     ```
